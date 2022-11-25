@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DurgeshModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DurgeshModelStoreContainer">
+    <EntitySet Name="tblproductdetails" EntityType="DurgeshModel.Store.tblproductdetails" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tblproductdetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CategoryId" Type="nvarchar" MaxLength="50" />
+    <Property Name="CategoruName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>
